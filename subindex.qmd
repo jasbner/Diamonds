@@ -1,0 +1,6 @@
+---
+title: "subindex"
+format: html
+---
+
+beep boop
