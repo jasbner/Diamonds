@@ -24,10 +24,15 @@ jobs:
       - name: Render
         run: quarto render index.qmd --output-dir=html
       - name: Render2
-        run: quarto render subindex.qmd --output-dir=html
+        run: quarto render subindex.qmd --output-dir=html2
 
       # Publish html/ to GitHub pages
       - name: Publish to GitHub pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           folder: html
+      # Publish html/ to GitHub pages
+      - name: Publish to GitHub pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
+        with:
+          folder: html2
